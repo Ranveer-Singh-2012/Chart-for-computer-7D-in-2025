@@ -1,0 +1,102 @@
+/* Basic reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: url('3305300.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Blurred grey overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* semi-transparent gray */
+  backdrop-filter: blur(5px);           /* blur the background image */
+  z-index: -1;
+}
+
+/* Container box for content */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+/* Header */
+.header {
+  background-color: navy;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Titles */
+h2 {
+  color: #0055a5;
+  margin-top: 30px;
+}
+
+/* Paragraphs and lists */
+p, ul, ol {
+  line-height: 1.6;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+/* Right-aligned images with hover effect */
+.right-image {
+  float: right;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.right-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styled button link */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-link:hover {
+  background-color: #003366;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin-top: 20px;
+}
